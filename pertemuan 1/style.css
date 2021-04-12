@@ -1,0 +1,43 @@
+/* membuat container dengan display flex */
+.container {
+    width: 600px;
+    /* height: 400px; */
+    height: 150px;
+    border: 5px solid #333;
+    margin: 30px auto;
+    padding: 5px;
+    box-sizing: border-box;
+    display: flex;
+    /* flex-direction: row;    flex direction untuk mengatur posisi awal dan akhir(horizontal atau vertikalnya) element di dalam container */
+    /* flex-wrap: wrap-reverse;     flex wrap mengatur jika item melebihi ukuran container maka item2 tersebut di turunkan ke baris baru */
+    /* justify-content: flex-start;     justify-content mengatur posisi dari masing-masing item di dalam container bisa rata tengah, sama rata, rata kanan atau kiri */
+    /* align-items: center;         align-items mengatur rata secara vertikal, seperti rata atas, rata bawah dan tengah pada container di masing-masing items*/
+     /*align-content: flex-start;       align-content mengatur item2 pada container dengan syarat lebih dari 1 baris di dalam container */
+}
+
+
+/* memberikan style pada item2 di dalam container ================================================= */
+/* order merubah posisi pada masing-masing item berdasarkan ururtan yang diinginkan dan jumlah item dalam satu baris */
+/* .tiga {order: 2;}
+.satu {order: 1;}
+.dua {order: 3;}
+.empat{order: 4;} */
+
+/* flex grow - memungkinkan membagi ukuran item sama rata atau menyesuaikan ukuran container */
+.container div{
+    /* width: 120px; */
+    /* height: 120px; */
+    background-color: rgba(19, 133, 255);
+    margin: 2px;
+    flex: 1; 
+}
+/* mengatur salah satu class menjadi lebih besar */
+.container div.dua{
+    flex: 2;
+    /* align-self - mengatur perilaku penjajaran sebuah item yang spesifik terhadap cross axis - hanya satu item */
+    /* align-self: flex-end; */
+}
+
+
+
+
